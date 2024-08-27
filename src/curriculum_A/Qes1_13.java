@@ -4,32 +4,41 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+        byte byteVar; 			// バイト型の変数
+        short shortVar; 		// 短整数型の変数
+        int intVar; 			// 整数型の変数
+        long longVar; 			// 長整数型の変数
+        float floatVar;	 	// 単精度浮動小数点数型の変数
+        double doubleVar;		// 倍精度浮動小数点数型の変数
+        char charVar; 			// 文字型の変数
+        String stringVar; 	// 文字列型の変数
+        boolean booleanVar; // ブーリアン型の変数
 		
-		/*
+		
 		// 初期値を代入し初期化
-        byte byteVar = 0; 			// バイト型の変数
-        short shortVar = 0; 		// 短整数型の変数
-        int intVar = 0; 			// 整数型の変数
-        long longVar = 0L; 			// 長整数型の変数
-        float floatVar = 0.0f;	 	// 単精度浮動小数点数型の変数
-        double doubleVar = 0.0;		// 倍精度浮動小数点数型の変数
-        char charVar = 0; 			// 文字型の変数
-        String stringVar = null; 	// 文字列型の変数
-        boolean booleanVar = false; // ブーリアン型の変数
-		*/
+        byteVar = 0; 			// バイト型の変数
+        shortVar = 0; 		// 短整数型の変数
+        intVar = 0; 			// 整数型の変数
+        longVar = 0L; 			// 長整数型の変数
+        floatVar = 0.0f;	 	// 単精度浮動小数点数型の変数
+        doubleVar = 0.0;		// 倍精度浮動小数点数型の変数
+        charVar = '\u0000'; 			// 文字型の変数
+        stringVar = null; 	// 文字列型の変数
+        booleanVar = false; // ブーリアン型の変数
+		
 		
 		
 		// 問3
 		
-        byte byteVar = 10;				// バイト型の変数
-        short shortVar = 100;			// 短整数型の変数
-        int intVar = 1000;				// 整数型の変数
-        long longVar = 10000L;			// 長整数型の変数
-        float floatVar = 9.5f; 			// 単精度浮動小数点数型の変数 
-        double doubleVar = 10.5;		// 倍精度浮動小数点数型の変数   
-        char charVar = 'a';				// 文字型の変数
-        String stringVar = "ハロー";	// 文字列型の変数
-        boolean booleanVar = true;		// ブーリアン型の変数
+        byteVar = 10;				// バイト型の変数
+        shortVar = 100;			// 短整数型の変数
+        intVar = 1000;				// 整数型の変数
+        longVar = 10000L;			// 長整数型の変数
+        floatVar = 9.5f; 			// 単精度浮動小数点数型の変数 
+        doubleVar = 10.5;		// 倍精度浮動小数点数型の変数   
+        charVar = 'a';				// 文字型の変数
+        stringVar = "ハロー";	// 文字列型の変数
+        booleanVar = true;		// ブーリアン型の変数
 		
         // 問4
 		System.out.println(longVar + intVar + shortVar + byteVar);// 11110
@@ -49,7 +58,7 @@ public class Qes1_13 {
         System.out.println("ハローJAVA"+(num2+num1));// コンソールに出力
 
         // 問6、7
-        /*
+        
         String name = "山田太郎";
         int age = 18;
         double height = 170.5;
@@ -66,25 +75,25 @@ public class Qes1_13 {
         System.out.println("「体重は" + weight + "kgです」");// 「体重は○○kgです」
         System.out.println("「好きな食べ物は" + favoriteFood + "です」");// 「好きな食べ物は○○です」
         System.out.printf("「BMIは%.1fです」%n", bmi);  // 「BMIは○○です」
-		*/
+		
 
         // 問8~13
 
-        String name = "鈴木一郎";
-        int age = 24;
-        double height = 168.5;
-        double weight = 64.2; 
-        String favoriteFood = "オムライス";
+        name = "鈴木一郎";
+        age = 24;
+        height = 168.5;
+        weight = 64.2; 
+        favoriteFood = "オムライス";
 
-        /*
+
         // 年齢・身長・体重の自己代入（和算）
         age += age;  // 24 + 24 = 48
         height += height;  // 168.5 + 168.5 = 337.0
         weight += weight;  // 64.2 + 64.2 = 128.4
-        */
+
         
-        double heightInMeters = height / 100.0;// 身長をメートルに変換
-        double bmi = weight / (heightInMeters * heightInMeters);// BMIの計算
+        heightInMeters = height / 100.0;// 身長をメートルに変換
+        bmi = weight / (heightInMeters * heightInMeters);// BMIの計算
         
         // 【年齢・身長・体重】を文字列型に型変換        
         String combined = String.valueOf(age) + String.valueOf(height) + String.valueOf(weight);
@@ -99,7 +108,7 @@ public class Qes1_13 {
         System.out.println("身長は" + height + "cmです");
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
-        System.out.printf("BMIは%.2fです%n", bmi);
+        System.out.printf("BMIは%.1fです%n", bmi);
 
         System.out.println(age >= 25 ? true : false);// 年齢が25歳以上ならtrue
         System.out.println(combined);// 【年齢・身長・体重】を文字列型に型変換し繋げて出力
