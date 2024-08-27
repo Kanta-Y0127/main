@@ -4,43 +4,44 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-        byte byteVar; 			// バイト型の変数
-        short shortVar; 		// 短整数型の変数
-        int intVar; 			// 整数型の変数
-        long longVar; 			// 長整数型の変数
-        float floatVar;	 	// 単精度浮動小数点数型の変数
-        double doubleVar;		// 倍精度浮動小数点数型の変数
-        char charVar; 			// 文字型の変数
-        String stringVar; 	// 文字列型の変数
-        boolean booleanVar; // ブーリアン型の変数
+        byte byteVar;		// バイト型の定義
+        short shortVar; 	// 短整数型の定義
+        int intVar; 		// 整数型の定義
+        long longVar; 		// 長整数型の定義
+        float floatVar;	 	// 単精度浮動小数点数型の定義
+        double doubleVar;	// 倍精度浮動小数点数型の定義
+        char charVar; 		// 文字型のの定義
+        String stringVar; 	// 文字列型の定義
+        boolean booleanVar; // ブーリアン型の定義
 		
 		
 		// 初期値を代入し初期化
-        byteVar = 0; 			// バイト型の変数
+        byteVar = 0; 		// バイト型の変数
         shortVar = 0; 		// 短整数型の変数
-        intVar = 0; 			// 整数型の変数
-        longVar = 0L; 			// 長整数型の変数
-        floatVar = 0.0f;	 	// 単精度浮動小数点数型の変数
-        doubleVar = 0.0;		// 倍精度浮動小数点数型の変数
-        charVar = '\u0000'; 			// 文字型の変数
-        stringVar = null; 	// 文字列型の変数
+        intVar = 0; 		// 整数型の変数
+        longVar = 0L; 		// 長整数型の変数
+        floatVar = 0.0f;	// 単精度浮動小数点数型の変数
+        doubleVar = 0.0;	// 倍精度浮動小数点数型の変数
+        charVar = '\u0000'; // 文字型の変数
+        stringVar = null;	// 文字列型の変数
         booleanVar = false; // ブーリアン型の変数
 		
 		
 		
 		// 問3
-		
-        byteVar = 10;				// バイト型の変数
-        shortVar = 100;			// 短整数型の変数
-        intVar = 1000;				// 整数型の変数
-        longVar = 10000L;			// 長整数型の変数
-        floatVar = 9.5f; 			// 単精度浮動小数点数型の変数 
-        doubleVar = 10.5;		// 倍精度浮動小数点数型の変数   
-        charVar = 'a';				// 文字型の変数
-        stringVar = "ハロー";	// 文字列型の変数
-        booleanVar = true;		// ブーリアン型の変数
+		// 値代入
+        byteVar = 10;
+        shortVar = 100;
+        intVar = 1000;
+        longVar = 10000L;
+        floatVar = 9.5f;
+        doubleVar = 10.5;
+        charVar = 'a';
+        stringVar = "ハロー";
+        booleanVar = true;
 		
         // 問4
+        // コンソール出力
 		System.out.println(longVar + intVar + shortVar + byteVar);// 11110
 		System.out.println(byteVar * 2);// 20
 		System.out.println(charVar + " " + stringVar + " " + booleanVar);//a ハロー true
