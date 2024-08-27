@@ -15,7 +15,7 @@ public class Qes1_13 {
         boolean booleanVar; // ブーリアン型の定義
 		
 		
-		// 初期値を代入し初期化
+        // 初期値を代入し初期化
         byteVar = 0; 		// バイト型の変数
         shortVar = 0; 		// 短整数型の変数
         intVar = 0; 		// 整数型の変数
@@ -28,8 +28,8 @@ public class Qes1_13 {
 		
 		
 		
-		// 問3
-		// 値代入
+        // 問3
+        // 値代入
         byteVar = 10;
         shortVar = 100;
         intVar = 1000;
@@ -42,10 +42,10 @@ public class Qes1_13 {
 		
         // 問4
         // コンソール出力
-		System.out.println(longVar + intVar + shortVar + byteVar);// 11110
-		System.out.println(byteVar * 2);// 20
-		System.out.println(charVar + " " + stringVar + " " + booleanVar);//a ハロー true
-		System.out.println(longVar + intVar + shortVar + byteVar + (int)(floatVar + doubleVar));// 数字を全て足す
+        System.out.println(longVar + intVar + shortVar + byteVar);// 11110
+        System.out.println(byteVar * 2);// 20
+        System.out.println(charVar + " " + stringVar + " " + booleanVar);//a ハロー true
+        System.out.println(longVar + intVar + shortVar + byteVar + (int)(floatVar + doubleVar));// 数字を全て足す
         System.out.println(longVar * intVar * shortVar * byteVar);// 小数点以外の数字を全てかける
         System.out.println(doubleVar / 100); // 0.105 10.5割る100をする
         System.out.println(byteVar - shortVar);// 10引く100をする
@@ -71,7 +71,7 @@ public class Qes1_13 {
 
         
         System.out.println("「初めまして" + name + "です」");// 「初めまして○○です」
-		System.out.println("「年齢は" + age + "歳です」");// 「年齢は○○歳です」
+        System.out.println("「年齢は" + age + "歳です」");// 「年齢は○○歳です」
         System.out.println("「身長は" + height + "cmです」");// 「身長は○○cmです」
         System.out.println("「体重は" + weight + "kgです」");// 「体重は○○kgです」
         System.out.println("「好きな食べ物は" + favoriteFood + "です」");// 「好きな食べ物は○○です」
