@@ -57,6 +57,7 @@ public class Qes1_13 {
         
         int num2 = Integer.parseInt(num);// numをint型に変換
         System.out.println("ハローJAVA"+(num2+num1));// コンソールに出力
+        System.out.println("");
 
         // 問6、7
         
@@ -69,14 +70,14 @@ public class Qes1_13 {
         double heightInMeters = height / 100.0;// 身長をメートルに変換
         double bmi = weight / (heightInMeters * heightInMeters);// BMIの計算
 
-        
+
         System.out.println("「初めまして" + name + "です」");// 「初めまして○○です」
         System.out.println("「年齢は" + age + "歳です」");// 「年齢は○○歳です」
         System.out.println("「身長は" + height + "cmです」");// 「身長は○○cmです」
         System.out.println("「体重は" + weight + "kgです」");// 「体重は○○kgです」
         System.out.println("「好きな食べ物は" + favoriteFood + "です」");// 「好きな食べ物は○○です」
         System.out.printf("「BMIは%.1fです」%n", bmi);  // 「BMIは○○です」
-		
+        System.out.println("");
 
         // 問8~13
 
@@ -86,6 +87,13 @@ public class Qes1_13 {
         weight = 64.2; 
         favoriteFood = "オムライス";
 
+        System.out.println("初めまして" + name + "です");
+        System.out.println("年齢は" + age + "歳です");
+        System.out.println("身長は" + height + "cmです");
+        System.out.println("体重は" + weight + "kgです");
+        System.out.println("好きな食べ物は" + favoriteFood + "です");
+        System.out.printf("BMIは%.1fです%n", bmi);
+        System.out.println("");
 
         // 年齢・身長・体重の自己代入（和算）
         age += age;  // 24 + 24 = 48
@@ -96,29 +104,37 @@ public class Qes1_13 {
         heightInMeters = height / 100.0;// 身長をメートルに変換
         bmi = weight / (heightInMeters * heightInMeters);// BMIの計算
         
-        // 【年齢・身長・体重】を文字列型に型変換        
-        String combined = String.valueOf(age) + String.valueOf(height) + String.valueOf(weight);
-        
-        // 【年齢・身長】を整数型に変換して出力
-        int ageAsInt = age;  // 年齢は既に整数型なのでそのまま使用
-        int heightAsInt = (int) height;  // 身長の小数点部分を切り捨てて整数型に変換
-
-
         System.out.println("初めまして" + name + "です");
         System.out.println("年齢は" + age + "歳です");
         System.out.println("身長は" + height + "cmです");
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
-        System.out.printf("BMIは%.1fです%n", bmi);
+        System.out.printf("BMIは%.2fです%n", bmi);
+        System.out.println("");
+        
+        // 年齢・身長・体重の再代入
+        age = 24;
+        height = 168.5;
+        weight = 64.2; 
 
-        age = 24;// 再代入
         System.out.println(age >= 25 ? true : false);// 年齢が25歳以上ならtrue
+        System.out.println("");
+        
+        // 【年齢・身長・体重】を文字列型に型変換        
+        String combined = String.valueOf(age) + String.valueOf(height) + String.valueOf(weight);
         System.out.println(combined);// 【年齢・身長・体重】を文字列型に型変換し繋げて出力
+        System.out.println("");
+        
+        // 【年齢・身長】を整数型に変換して出力
+        int ageAsInt = age;  // 年齢は既に整数型なのでそのまま使用
+        int heightAsInt = (int) height;  // 身長の小数点部分を切り捨てて整数型に変換
 
         System.out.println(ageAsInt); // 整数型に変換された【年齢】を出力
         System.out.println(heightAsInt); // 整数型に変換された【身長】を出力
-        System.out.println(age >= 25 || height >= 160 ? true : false);// 【年齢が25もしくは身長が160以上】であればtrueを出力
-
+        System.out.println("");
+        
+        // 【年齢が25もしくは身長が160以上】であればtrueを出力
+        System.out.println(age >= 25 || height >= 160 ? true : false);
 
 	}
 
