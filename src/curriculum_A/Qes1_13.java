@@ -111,7 +111,7 @@ public class Qes1_13 {
         System.out.println("好きな食べ物は" + favoriteFood + "です");
         System.out.printf("BMIは%.1fです%n", bmi);
 
-        age = 24;// 年齢再代入
+        age = 24;// 再代入
         System.out.println(age >= 25 ? true : false);// 年齢が25歳以上ならtrue
         System.out.println(combined);// 【年齢・身長・体重】を文字列型に型変換し繋げて出力
 
