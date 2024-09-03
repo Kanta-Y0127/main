@@ -58,5 +58,6 @@ public class Qes6 {
             System.out.println(result);
             System.out.println();
         }
+        scanner.close();
     }
 }

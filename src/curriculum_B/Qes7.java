@@ -76,5 +76,7 @@ public class Qes7 {
         System.out.printf("理科の平均点は%.2f点です。\n", averageScience);
         System.out.printf("社会の平均点は%.2f点です。\n", averageSocialStudies);
         System.out.printf("全体の平均点は%.2f点です。\n", overallAverage);
+        
+        scanner.close();
     }
 }
