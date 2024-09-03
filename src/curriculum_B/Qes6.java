@@ -12,7 +12,7 @@ public class Qes6 {
 		 * [概要] 入力した商品の残り台数が出力される処理
 		 * [詳細] 入力した商品の残り台数をコンソールに0～11までのランダム値で表示する。
 		 * */
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);// scanner処理
         System.out.print("");
         String input = scanner.nextLine();
         
@@ -58,6 +58,7 @@ public class Qes6 {
             System.out.println(result);
             System.out.println();
         }
+        // scanner閉じ処理
         scanner.close();
     }
 }

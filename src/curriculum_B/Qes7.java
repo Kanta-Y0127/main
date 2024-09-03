@@ -10,7 +10,7 @@ public class Qes7 {
 		 * [概要] N人の生徒の成績を管理するプログラム処理
 		 * [詳細] 各生徒の科目平均点、全体の科目平均点、そして各教科の平均点を表示する。
 		 * */
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);// scanner処理
 
         // 生徒の人数を入力
         int numStudents;
@@ -77,6 +77,7 @@ public class Qes7 {
         System.out.printf("社会の平均点は%.2f点です。\n", averageSocialStudies);
         System.out.printf("全体の平均点は%.2f点です。\n", overallAverage);
         
+        // scanner閉じ処理
         scanner.close();
     }
 }

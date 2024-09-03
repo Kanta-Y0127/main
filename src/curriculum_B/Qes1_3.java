@@ -11,20 +11,15 @@ public class Qes1_3 {
 		 * [概要] ログイン時の入力チェックシステム処理
 		 * [詳細] コンソールにユーザー名を入力できるようにする。
 		 * */
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);// scanner処理
         System.out.print("");
-        String username = scanner.nextLine();
+        String username = scanner.nextLine().trim();
 
         // [概要] コンソール入力時イベント
         
         // 文字数が0文字以下もしくはnullの場合「名前を入力してください」と出力
-        if (username == null || username.length() == 0) {
+        if (username.isEmpty()) {
             System.out.println("「名前を入力してください」");
-            return;
-            
-        // 文字数が10文字より大きい場合「名前を10文字以内にしてください」と出力
-        } else if (username.length() > 10) {
-            System.out.println("「名前を10文字以内にしてください」");
             return;
             
         // 半角英数字以外の場合「半角英数字のみで名前を入力してください」と出力
@@ -32,6 +27,11 @@ public class Qes1_3 {
             System.out.println("「半角英数字のみで名前を入力してください」");
             return;
             
+        // 文字数が10文字より大きい場合「名前を10文字以内にしてください」と出力
+        } else if (username.length() > 10) {
+            System.out.println("「名前を10文字以内にしてください」");
+            return;
+
         // 正常な値だった場合「ユーザー名「 入力したユーザー名 」を登録しました」と出力
         } else {
             System.out.println("ユーザー名「" + username + "」を登録しました");
@@ -84,6 +84,7 @@ public class Qes1_3 {
 
         // じゃんけん勝つまでの合計回数を表示
         System.out.println("勝つまでにかかった合計回数は" + attempts + "回です");
+        // scanner閉じ処理
         scanner.close();
     }
 
