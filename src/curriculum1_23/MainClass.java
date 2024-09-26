@@ -6,9 +6,9 @@ public class MainClass {
         Animal lion = new Animal();
 
         // セッターメソッドを使って値を設定
-        lion.setName("ライオン");
-        lion.setLength(2.1); // 体長をメートルで設定
-        lion.setSpeed(80); // 速度をキロメートル毎時で設定
+        lion.setName("ライオン");// 名前
+        lion.setLength(2.1); // 体長
+        lion.setSpeed(80); // 速度
 
         // ゲッターメソッドを使って値を取得して表示
         System.out.println("動物名：" + lion.getName());
