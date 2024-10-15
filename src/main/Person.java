@@ -23,14 +23,16 @@ public class Person {
 
     // 問題6, 7: BMIを計算して返すメソッド
     public double bmi() {
-        return weight / (height * height);
+        return Math.floor(this.weight / this.height / this.height);
     }
 
     // 問題8, 9: 自己紹介を表示するメソッド
     public void print() {
         System.out.println("名前は" + this.name + "です");
-        System.out.println("年は" + this.age + "歳です");
+        System.out.println("年は" + this.age + "才です");
         System.out.printf("BMIは%.1fです\n", this.bmi());  // 小数点1桁まで表示
+		System.out.println();
+
     }
 
     // 問題10: 合計人数を表示するメソッド（静的メソッド）
